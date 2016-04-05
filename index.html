@@ -6,9 +6,15 @@
     <meta charset="utf-8">
     <style>
       #map {
-        height:100%;
-        width:800px;
-        /*margin: auto;*/
+        height:600px;
+        width:80%;
+        margin: auto;
+      }
+
+      h1{
+        width:80%;
+        margin: auto;
+        text-align: center; 
       }
     </style>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -26,25 +32,20 @@
         };
         var positions = [
           {
-            'title':'Foundation building',
-            'map': new google.maps.LatLng(40.7291, -73.9906),
-            'link':'http://cooper.edu',
-            'html':'<img src=http://placehold.it/350x150 />'
+            'title':'McSorleys Ale House. I mixed the light and dark ales and they got mad.',
+            'map': new google.maps.LatLng(40.728922, -73.989441),
+            'link':'http://www.yelp.com/biz/mcsorleys-old-ale-house-new-york',
+            'html':'<img src=https://pbs.twimg.com/profile_images/513880151331860481/nV_0DeFI_400x400.jpeg />'
           },
           {
-            'title':'Cooper Square Park',
-            'map':new google.maps.LatLng(40.72875, -73.9908),
-            'link':'http://cooper.edu'
+            'title':'Ukrainian Museum. I tried to fit into an ancient Russian nesting doll',
+            'map': new google.maps.LatLng(40.727694, -73.989752),
           },
           {
-            'title':'Cooper Union New Building',
-            'map': new google.maps.LatLng(40.7287, -73.99025),
-            'link':'http://cooper.edu'
-          },
-          {
-            'title':'Video Games New York',
+            'title':'Video Games New York. I got frisky with the giant Mario',
             'map': new google.maps.LatLng(40.7278926,-73.99058),
-            'link':'http://www.videogamesnewyork.com/'
+            'link':'http://www.videogamesnewyork.com/',
+            'html': '<img src=https://s3-media1.fl.yelpcdn.com/bphoto/3osRh1SO8U2oHBraNhg4Gw/180s.jpg />'
           }
         ];
         draw('map', mapOptions, positions);
@@ -54,6 +55,7 @@
     </script>
   </head>
   <body>
+    <h1>Places I'm Not Allowed Into Anymore Because Of Reasons.</h1>
     <div id="map"></div>
   </body>
 </html>
